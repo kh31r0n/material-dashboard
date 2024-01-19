@@ -3893,6 +3893,41 @@ fieldset:disabled .btn {
   --bs-gradient: none;
 }
 
+.btn-outline-primary {
+  --bs-btn-color: #e91e63;
+  --bs-btn-border-color: #e91e63;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #e91e63;
+  --bs-btn-hover-border-color: #e91e63;
+  --bs-btn-focus-shadow-rgb: 233, 30, 99;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #e91e63;
+  --bs-btn-active-border-color: #e91e63;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: #e91e63;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #e91e63;
+  --bs-gradient: none;
+}
+
+.btn-outline-third {
+  --bs-btn-color: #2A8AFA;
+  --bs-btn-border-color: #2A8AFA;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #009688; /* Color complementario */
+  --bs-btn-hover-border-color: #009688; /* Color complementario */
+  --bs-btn-focus-shadow-rgb: 0, 150, 136; /* Color complementario */
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #009688; /* Color complementario */
+  --bs-btn-active-border-color: #009688; /* Color complementario */
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: #2A8AFA;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #2A8AFA;
+  --bs-gradient: none;
+}
+
+
 .btn-outline-secondary {
   --bs-btn-color: #7b809a;
   --bs-btn-border-color: #7b809a;
@@ -5292,6 +5327,7 @@ fieldset:disabled .btn {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  display: flex;
 }
 
 .card-title {
@@ -22741,7 +22777,7 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(195deg, #EC407A 0%, #D81B60 100%);
+  background-image: linear-gradient(195deg, #0078D5 0%, #005CBF 100%);
 }
 
 .bg-gradient-secondary {
@@ -22749,11 +22785,11 @@ label,
 }
 
 .bg-gradient-success {
-  background-image: linear-gradient(195deg, #66BB6A 0%, #43A047 100%);
+  background-image: linear-gradient(195deg, #009C3B 0%, #007D2F 100%);
 }
 
 .bg-gradient-info {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1A73E8 100%);
+  background-image: linear-gradient(195deg, #FFC200 0%, #FFA000 100%);
 }
 
 .bg-gradient-warning {
@@ -22770,6 +22806,14 @@ label,
 
 .bg-gradient-dark {
   background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+}
+
+.bg-gradient-blue {
+  background-image: linear-gradient(195deg, #7793E9 0%, #4E6FBF 100%);
+}
+
+.bg-gradient-red {
+  background-image: linear-gradient(195deg, #FF4900 0%, #B72000 100%);
 }
 
 .bg-gradient-faded-primary {
@@ -27934,3 +27978,27 @@ pre[class*="language-"] {
 }
 
 /*# sourceMappingURL=dashboard-free.css.map */
+.status-image-israel{
+  display: block;
+  max-width: 585px;
+}
+
+.map-judea, .map-samaria, .map-idumea, .map-galilea, .map-perea {
+  display: block;
+  width: 32px;
+  height: 48px;
+  animation: appearAndBounce 1s ease-in-out;
+  position: absolute;
+  width: 20%; /* Ajusta el ancho según tus necesidades */
+  cursor: pointer; /* Change cursor style to pointer on hover */
+}
+
+.container-image {
+  position: relative;
+  width: 500px; /* Ajusta el ancho según tus necesidades */
+}
+
+.status-image-arquelao, .status-image-herodes{
+  display: none;
+  max-width: 600px;
+}
